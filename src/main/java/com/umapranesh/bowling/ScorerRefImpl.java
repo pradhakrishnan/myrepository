@@ -60,6 +60,11 @@ public class ScorerRefImpl implements Scorer {
 	public Integer getPlayerScore(String player) throws InvalidInput {
 		BowlingGame game = list.get(player);
 		List<Frame> frameList = game.getFrames();
+		for(Frame frame: frameList){
+			if(frame.isStrike()){
+				
+			}
+		}
 		return null;
 	}
 
